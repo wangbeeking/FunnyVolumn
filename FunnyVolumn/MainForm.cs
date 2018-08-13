@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FunnyVolumn.ChildForms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,13 @@ namespace FunnyVolumn
         public MainForm()
         {
             InitializeComponent();
+            VolumnControler.Initialize(VolumnControlerType.TEST);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form1 form1 = new Form1();
+            form1.Show();
         }
     }
 }
